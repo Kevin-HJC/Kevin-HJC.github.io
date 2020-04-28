@@ -107,6 +107,68 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
@@ -129,7 +191,10 @@
         </header>
 
         <div class="post-content">
-            
+            <p>#黄景成 177-5411-9312<br>#mf1431413982@163.com</p>
+<p> ##<strong>安徽信息工程学院 2017年9月 - 2021年6月 软件工程 本科 计算机与软件工程学院 芜湖 GPA 3.6/4.0</strong></p>
+<h3 id="技能：-Word，Excel，PowerPoint，Visio，交互设计-证书-执照：-证书-执照：-计算机等级证书，普通话等级证书-语言能力：-语言能力：-英语（CET-4）"><a href="#技能：-Word，Excel，PowerPoint，Visio，交互设计-证书-执照：-证书-执照：-计算机等级证书，普通话等级证书-语言能力：-语言能力：-英语（CET-4）" class="headerlink" title="技能： Word，Excel，PowerPoint，Visio，交互设计 证书/执照： 证书/执照： 计算机等级证书，普通话等级证书 语言能力： 语言能力： 英语（CET-4）"></a>技能： Word，Excel，PowerPoint，Visio，交互设计 证书/执照： 证书/执照： 计算机等级证书，普通话等级证书 语言能力： 语言能力： 英语（CET-4）</h3><p>#####<em>深入了解互联网产品的开发和管理流程，注重用户体验以及交互反馈，有良好编程基础和技术背景 较强的执行力，熟练使用Axure、Mindmanager、Visio等软件进行产品原型、脑图、流程图的制作 对UI交互设计、用户体验、产品运营有独到的见解与想法、有强烈的产品创新意识与创作欲望</em></p>
+
         </div>
 
         
