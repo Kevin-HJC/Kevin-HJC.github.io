@@ -38,10 +38,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -50,19 +46,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.0.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.1" color="#222">
 
 
 
@@ -80,10 +76,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mefia Huang">
-<meta property="og:url" content="http://kevin-hjc.github.io/index.html">
+<meta property="og:title" content="category">
+<meta property="og:url" content="http://kevin-hjc.github.io/category/index.html">
 <meta property="og:site_name" content="Mefia Huang">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-28T01:36:50.000Z">
+<meta property="article:modified_time" content="2020-04-28T01:38:31.102Z">
 <meta property="article:author" content="Kevin-HJC">
 <meta name="twitter:card" content="summary">
 
@@ -94,15 +92,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '5.1.4',
+    version: '6.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -115,7 +111,7 @@
 
 
 
-  <link rel="canonical" href="http://Kevin-HJC.github.io/"/>
+  <link rel="canonical" href="http://Kevin-HJC.github.io/category/"/>
 
 
 
@@ -144,8 +140,10 @@
   page-home">
     <div class="headband"></div>
 
+    
+
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"> <div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -179,51 +177,13 @@
         
         <li class="menu-item menu-item-home">
           <a href="/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
         </li>
       
 
@@ -252,6 +212,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -290,9 +252,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-27T20:07:05+08:00">
-                2020-04-27
-              </time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-27T20:07:05+08:00">2020-04-27</time>
             
 
             
@@ -376,6 +336,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -412,9 +374,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-27T10:58:25+08:00">
-                2020-04-27
-              </time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-27T10:58:25+08:00">2020-04-27</time>
             
 
             
@@ -508,9 +468,6 @@
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -539,24 +496,24 @@
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
 
-            
+              
 
-            
-
-          </nav>
+              
+            </nav>
+          
 
           
 
@@ -594,6 +551,8 @@
   <span class="author" itemprop="copyrightHolder">Kevin-HJC</span>
 
   
+
+  
 </div>
 
 
@@ -605,7 +564,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.1</div>
 
 
 
@@ -649,7 +608,11 @@
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -669,16 +632,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -687,18 +640,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.1"></script>
 
 
 
@@ -710,15 +658,11 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.1"></script>
 
 
 
   
-
-
-  
-
 
 
 
@@ -735,8 +679,6 @@
 
 
   
-
-
 
 
 
