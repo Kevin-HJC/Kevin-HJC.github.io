@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mefia Huang</title>
+    <link>http://Kevin-HJC.github.io/</link>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>一位酷爱健身的脑爱好者.</description>
+    <pubDate>Wed, 06 May 2020 05:13:16 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>初次见面</title>
+      <link>http://kevin-hjc.github.io/2020/05/05/2020-5-5-14.13/</link>
+      <guid>http://kevin-hjc.github.io/2020/05/05/2020-5-5-14.13/</guid>
+      <pubDate>Tue, 05 May 2020 08:03:13 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;2020年5月5日  14.13&lt;/p&gt;
+&lt;p&gt;人生第一个apple产品发货了,快递单号:&lt;/p&gt;
+&lt;p&gt;看到消息提醒内心时激动的,脑激素都飙升了一下,两分钟后平静了下来.&lt;/p&gt;
+&lt;p&gt;14.17分写下这段话.&lt;/p&gt;
+
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<p>2020年5月5日  14.13</p><p>人生第一个apple产品发货了,快递单号:</p><p>看到消息提醒内心时激动的,脑激素都飙升了一下,两分钟后平静了下来.</p><p>14.17分写下这段话.</p>]]></content:encoded>
+      
+      <comments>http://kevin-hjc.github.io/2020/05/05/2020-5-5-14.13/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
