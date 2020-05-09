@@ -9,8 +9,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>一位酷爱健身的脑爱好者.</description>
-    <pubDate>Wed, 06 May 2020 07:49:20 GMT</pubDate>
+    <pubDate>Sat, 09 May 2020 09:04:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Java</title>
+      <link>http://kevin-hjc.github.io/2020/05/09/HelloWorld/</link>
+      <guid>http://kevin-hjc.github.io/2020/05/09/HelloWorld/</guid>
+      <pubDate>Sat, 09 May 2020 09:23:30 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;我和国漫的岁月&quot;&gt;&lt;a href=&quot;#我和国漫的岁月&quot; class=&quot;headerlink&quot; title=&quot;我和国漫的岁月&quot;&gt;&lt;/a&gt;我和国漫的岁月&lt;/h1&gt;&lt;h3 id=&quot;镇魂街&quot;&gt;&lt;a href=&quot;#镇魂街&quot; class=&quot;headerlink&quot; title=
+        
+      
+      </description>
+      
+      
+      <content:encoded><![CDATA[<h1 id="我和国漫的岁月"><a href="#我和国漫的岁月" class="headerlink" title="我和国漫的岁月"></a>我和国漫的岁月</h1><h3 id="镇魂街"><a href="#镇魂街" class="headerlink" title="镇魂街"></a>镇魂街</h3><h3 id="画江湖系列"><a href="#画江湖系列" class="headerlink" title="画江湖系列"></a>画江湖系列</h3><h5 id="画江湖之不良人"><a href="#画江湖之不良人" class="headerlink" title="画江湖之不良人"></a>画江湖之不良人</h5><p>目前为止已完结三季，第四季筹备中。衍生品：小说《画江湖之不良人》 作者：一伤二十八。</p><h5 id="画江湖之灵主"><a href="#画江湖之灵主" class="headerlink" title="画江湖之灵主"></a>画江湖之灵主</h5><p>目前完结第一季，第二季筹备中。</p><h5 id="画江湖之杯莫停"><a href="#画江湖之杯莫停" class="headerlink" title="画江湖之杯莫停"></a>画江湖之杯莫停</h5><p>目前完结第一季，第二季筹备中。</p><h5 id="画江湖之换世门生"><a href="#画江湖之换世门生" class="headerlink" title="画江湖之换世门生"></a>画江湖之换世门生</h5><p>目前完结上篇，下篇筹备中。</p><h5 id="画江湖之夏岚"><a href="#画江湖之夏岚" class="headerlink" title="画江湖之夏岚"></a>画江湖之夏岚</h5><p>对于这个我可能要吐槽一番。画江湖之夏岚世纪是夏岚第七季。但和前六季并没有紧密的联系，更像是单拎出来的，不仅人物模型有所改变，画风也没有了童年的味道。多说无益，有兴趣可以自己去看看，前六季是真的不错。<br><strong>侠岚振翼篇</strong>  <strong>侠岚云见篇</strong>  <strong>侠岚鸣风篇</strong>  <strong>侠岚若星篇</strong>  <strong>侠岚凌霜篇</strong> <strong>侠岚决敌篇</strong></p><h5 id="画江湖之夜神"><a href="#画江湖之夜神" class="headerlink" title="画江湖之夜神"></a>画江湖之夜神</h5><p>播出时间未定</p>]]></content:encoded>
+      
+      <comments>http://kevin-hjc.github.io/2020/05/09/HelloWorld/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Java</title>
@@ -30,30 +50,6 @@
       <content:encoded><![CDATA[<h1 id="Jave方向面试准备"><a href="#Jave方向面试准备" class="headerlink" title="Jave方向面试准备"></a>Jave方向面试准备</h1><h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量:"></a>变量:</h3><p>用来命名一个数据的标识符</p><h5 id="基本变量类型"><a href="#基本变量类型" class="headerlink" title="基本变量类型"></a>基本变量类型</h5><p>八种基本变量类型:  整型(byte/short/int/long)  字符型(char)  浮点型(double/float)  布尔型(boolean)</p><table><thead><tr><th align="center">类型</th><th align="center">缺省值</th><th align="center">长度/位</th><th align="center">数的范围</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">0</td><td align="center">8</td><td align="center">-128~127</td></tr><tr><td align="center">short</td><td align="center">0</td><td align="center">16</td><td align="center">-32768~32767</td></tr><tr><td align="center">int</td><td align="center">0</td><td align="center">32</td><td align="center">-2^31~2^31</td></tr><tr><td align="center">long</td><td align="center">0</td><td align="center">64</td><td align="center">-2^63~2^63</td></tr><tr><td align="center">float</td><td align="center">0.0</td><td align="center">32</td><td align="center"></td></tr><tr><td align="center">double</td><td align="center">0.0</td><td align="center">64</td><td align="center"></td></tr><tr><td align="center">boolean</td><td align="center">false</td><td align="center">1</td><td align="center">false&amp;true</td></tr></tbody></table><p>字符型:char类型用于存放一个字符,用单引号,例如:  ‘ J ‘ ,其长度和short一样.</p><p>浮点型:double需在赋值后+d,float需在赋值后+f.</p><p>布尔型:用于表示真假虽然布尔型真正存放的数据是0(false) 1(true)但是，不能直接使用0 1 进行赋值</p><p><strong>注意:</strong></p><p><em>String类型:其实并不是基本类型,String类型是Immutable的，一旦创建就不能够被改变.</em></p><p><em>类型转换: 只能大 —&gt; 小</em></p><h3 id="Hashcode-amp-Equals"><a href="#Hashcode-amp-Equals" class="headerlink" title="Hashcode&amp;Equals"></a>Hashcode&amp;Equals</h3><p>equals与hashcode的关系是：两个对象在equals相等的情况下，hashcode有可能相等也有可能不相等，而两个对象在hashcode不相等的情况下，equals也必定不相等。理解equals的应用：它是用于用户在进行对比的时候，这个时候对比的是内容是否相等理解hashcode的应用：例如set集合，它的不可重复，进行对比的便是hashcode是否相等，因此set集合实现了不可重复。</p><p>如果根据 equals(Object) 方法，两个对象是相等的，那么对这两个对象中的每个对象调用 hashCode 方法都必须生成相同的整数结果。即使两个hashCode()返回的结果相等，两个对象的equals方法也不一定相等。</p><h5 id="Hashcode-哈希码"><a href="#Hashcode-哈希码" class="headerlink" title="Hashcode:哈希码"></a>Hashcode:<a href="https://baike.baidu.com/item/%E5%93%88%E5%B8%8C%E7%A0%81/5035512?fr=aladdin&fromtitle=hashcode&fromid=7482507" target="_blank" rel="noopener">哈希码</a></h5><p>是jdk根据对象的地址或者字符串或者数字算出来的int类型的数值。支持此方法是为了提高哈希表（例如java.util.Hashtable 提供的哈希表）的性能。HashMap对象是根据其Key的hashCode来获取对应的Value。在重写父类的equals方法时，也重写hashcode方法，使相等的两个对象获取的HashCode也相等。这样当此对象做Map类中的Key时，两个equals为true的对象其获取的value都是同一个，比较符合实际。</p><h5 id="Equals-equals"><a href="#Equals-equals" class="headerlink" title="Equals:equals"></a>Equals:<a href="https://baike.baidu.com/item/equals/4481402#viewPageContent" target="_blank" rel="noopener">equals</a></h5><p>电脑编程语言，被用来检测两个对象是否相等，即两个对象的内容是否相等。</p><p>equals 方法（是String类从它的超类Object中继承的）==用于比较引用和比较基本数据类型时具有不同的功能：比较基本数据类型，如果两个值相同，则结果为true而在比较引用时，如果引用指向内存中的同一对象，结果为true</p><h3 id="集合-1-8-的实现和-1-7-相比变化"><a href="#集合-1-8-的实现和-1-7-相比变化" class="headerlink" title="集合 1.8 的实现和 1.7 相比变化"></a>集合 1.8 的实现和 1.7 相比变化</h3><h4 id="Collection-有什么子接口、有哪些具体的实现"><a href="#Collection-有什么子接口、有哪些具体的实现" class="headerlink" title="Collection 有什么子接口、有哪些具体的实现"></a>Collection 有什么子接口、有哪些具体的实现</h4><h4 id="简单介绍下-ArrayList-怎么实现，加操作、取值操作，什么时候扩容？"><a href="#简单介绍下-ArrayList-怎么实现，加操作、取值操作，什么时候扩容？" class="headerlink" title="简单介绍下 ArrayList 怎么实现，加操作、取值操作，什么时候扩容？"></a>简单介绍下 ArrayList 怎么实现，加操作、取值操作，什么时候扩容？</h4><h4 id="讲一下-hashMap-原理。hashMap-可以并发读么？并发写会有什么问题？"><a href="#讲一下-hashMap-原理。hashMap-可以并发读么？并发写会有什么问题？" class="headerlink" title="讲一下 hashMap 原理。hashMap 可以并发读么？并发写会有什么问题？"></a>讲一下 hashMap 原理。hashMap 可以并发读么？并发写会有什么问题？</h4><h4 id="讲一下-concurrentHashMap-原理。头插法还是尾插法？扩容怎么做？"><a href="#讲一下-concurrentHashMap-原理。头插法还是尾插法？扩容怎么做？" class="headerlink" title="讲一下 concurrentHashMap 原理。头插法还是尾插法？扩容怎么做？"></a>讲一下 concurrentHashMap 原理。头插法还是尾插法？扩容怎么做？</h4><h4 id="堆是怎么存储的，插入是在哪里？"><a href="#堆是怎么存储的，插入是在哪里？" class="headerlink" title="堆是怎么存储的，插入是在哪里？"></a>堆是怎么存储的，插入是在哪里？</h4><h4 id="集合在迭代的过程中，插入或删除数据会怎样？"><a href="#集合在迭代的过程中，插入或删除数据会怎样？" class="headerlink" title="集合在迭代的过程中，插入或删除数据会怎样？"></a>集合在迭代的过程中，插入或删除数据会怎样？</h4><h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><h4 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h4><h4 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h4><h3 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h3><h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2>]]></content:encoded>
       
       <comments>http://kevin-hjc.github.io/2020/05/06/Jave%E6%96%B9%E5%90%91%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>初次见面</title>
-      <link>http://kevin-hjc.github.io/2020/05/05/2020-5-5-14.13/</link>
-      <guid>http://kevin-hjc.github.io/2020/05/05/2020-5-5-14.13/</guid>
-      <pubDate>Tue, 05 May 2020 08:03:13 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;2020年5月5日  14.13&lt;/p&gt;
-&lt;p&gt;人生第一个iPhone产品 SE二代 发货了,快递单号:&lt;/p&gt;
-&lt;p&gt;看到消息提醒内心时激动的,脑激素都飙升了一下,两分钟后平静了下来.&lt;/p&gt;
-&lt;p&gt;14.17 写下这段话.&lt;/p&gt;
-
-        
-      
-      </description>
-      
-      
-      <content:encoded><![CDATA[<p>2020年5月5日  14.13</p><p>人生第一个iPhone产品 SE二代 发货了,快递单号:</p><p>看到消息提醒内心时激动的,脑激素都飙升了一下,两分钟后平静了下来.</p><p>14.17 写下这段话.</p>]]></content:encoded>
-      
-      <comments>http://kevin-hjc.github.io/2020/05/05/2020-5-5-14.13/#disqus_thread</comments>
     </item>
     
   </channel>
