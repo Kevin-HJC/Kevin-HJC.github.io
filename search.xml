@@ -1,106 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Java</title>
-    <url>/2020/05/06/Jave%E6%96%B9%E5%90%91%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</url>
-    <content><![CDATA[<h1 id="Jave方向面试准备"><a href="#Jave方向面试准备" class="headerlink" title="Jave方向面试准备"></a>Jave方向面试准备</h1><h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量:"></a>变量:</h3><p>用来命名一个数据的标识符</p>
-<h5 id="基本变量类型"><a href="#基本变量类型" class="headerlink" title="基本变量类型"></a>基本变量类型</h5><p>八种基本变量类型:  整型(byte/short/int/long)  字符型(char)  浮点型(double/float)  布尔型(boolean)</p>
-<table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">缺省值</th>
-<th align="center">长度/位</th>
-<th align="center">数的范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">byte</td>
-<td align="center">0</td>
-<td align="center">8</td>
-<td align="center">-128~127</td>
-</tr>
-<tr>
-<td align="center">short</td>
-<td align="center">0</td>
-<td align="center">16</td>
-<td align="center">-32768~32767</td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">0</td>
-<td align="center">32</td>
-<td align="center">-2^31~2^31</td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">0</td>
-<td align="center">64</td>
-<td align="center">-2^63~2^63</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center">0.0</td>
-<td align="center">32</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">double</td>
-<td align="center">0.0</td>
-<td align="center">64</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">false</td>
-<td align="center">1</td>
-<td align="center">false&amp;true</td>
-</tr>
-</tbody></table>
-<p>字符型:char类型用于存放一个字符,用单引号,例如:  ‘ J ‘ ,其长度和short一样.</p>
-<p>浮点型:double需在赋值后+d,float需在赋值后+f.</p>
-<p>布尔型:用于表示真假虽然布尔型真正存放的数据是0(false) 1(true)但是，不能直接使用0 1 进行赋值</p>
-<p><strong>注意:</strong></p>
-<p><em>String类型:其实并不是基本类型,String类型是Immutable的，一旦创建就不能够被改变.</em></p>
-<p><em>类型转换: 只能大 —&gt; 小</em></p>
-<h3 id="Hashcode-amp-Equals"><a href="#Hashcode-amp-Equals" class="headerlink" title="Hashcode&amp;Equals"></a>Hashcode&amp;Equals</h3><p>equals与hashcode的关系是：两个对象在equals相等的情况下，hashcode有可能相等也有可能不相等，而两个对象在hashcode不相等的情况下，equals也必定不相等。理解equals的应用：它是用于用户在进行对比的时候，这个时候对比的是内容是否相等理解hashcode的应用：例如set集合，它的不可重复，进行对比的便是hashcode是否相等，因此set集合实现了不可重复。</p>
-<p>如果根据 equals(Object) 方法，两个对象是相等的，那么对这两个对象中的每个对象调用 hashCode 方法都必须生成相同的整数结果。即使两个hashCode()返回的结果相等，两个对象的equals方法也不一定相等。</p>
-<h5 id="Hashcode-哈希码"><a href="#Hashcode-哈希码" class="headerlink" title="Hashcode:哈希码"></a>Hashcode:<a href="https://baike.baidu.com/item/%E5%93%88%E5%B8%8C%E7%A0%81/5035512?fr=aladdin&fromtitle=hashcode&fromid=7482507" target="_blank" rel="noopener">哈希码</a></h5><p>是jdk根据对象的地址或者字符串或者数字算出来的int类型的数值。支持此方法是为了提高哈希表（例如java.util.Hashtable 提供的哈希表）的性能。HashMap对象是根据其Key的hashCode来获取对应的Value。在重写父类的equals方法时，也重写hashcode方法，使相等的两个对象获取的HashCode也相等。这样当此对象做Map类中的Key时，两个equals为true的对象其获取的value都是同一个，比较符合实际。</p>
-<h5 id="Equals-equals"><a href="#Equals-equals" class="headerlink" title="Equals:equals"></a>Equals:<a href="https://baike.baidu.com/item/equals/4481402#viewPageContent" target="_blank" rel="noopener">equals</a></h5><p>电脑编程语言，被用来检测两个对象是否相等，即两个对象的内容是否相等。</p>
-<p>equals 方法（是String类从它的超类Object中继承的）==用于比较引用和比较基本数据类型时具有不同的功能：比较基本数据类型，如果两个值相同，则结果为true而在比较引用时，如果引用指向内存中的同一对象，结果为true</p>
-<h3 id="集合-1-8-的实现和-1-7-相比变化"><a href="#集合-1-8-的实现和-1-7-相比变化" class="headerlink" title="集合 1.8 的实现和 1.7 相比变化"></a>集合 1.8 的实现和 1.7 相比变化</h3><h4 id="Collection-有什么子接口、有哪些具体的实现"><a href="#Collection-有什么子接口、有哪些具体的实现" class="headerlink" title="Collection 有什么子接口、有哪些具体的实现"></a>Collection 有什么子接口、有哪些具体的实现</h4><p>Collection是最基本的集合接口，声明了适用于JAVA集合（只包括Set和List）的通用方法。Map接口并不是Collection接口的子接口，但是它仍然被看作是Collection框架的一部分。</p>
-<p><img src="https://img-blog.csdn.net/20170817122606046?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXdxNTIwdHQxMzE0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="Collection"></p>
-<p> 我们可以看到collection接口是由两个子接口Set和List以及Map(不是collection的接口)组成的。下面我们分别看下各个子接口的组成和实现。 </p>
-<p> List(interface): List可以通过index知道元素的位置，它允许元素的重复。ArrayList, LinkedList, Vector可以实List接口。</p>
-<p> Set(interface):是不允许元素的重复。HashSet, LinkedHashSet,TreeSet 可以实现Set接口。</p>
-<p> Map(interface): 使用键值对(key-value), 值(value)可以重复，键(key)不可以重复。HashMap, LinkedHashMap, Hashtale, TreeMap可以实现Map接口。</p>
-<p><strong><em>boolean add(Object o)    ：向集合中加入一个对象的引用</em></strong><br><strong><em>void clear()：删除集合中所有的对象，即不再持有这些对象的引用</em></strong><br><strong><em>boolean isEmpty()   ：判断集合是否为空</em></strong><br><strong><em>boolean contains(Object o) ： 判断集合中是否持有特定对象的引用</em></strong><br><strong><em>Iterartor iterator()  ：返回一个Iterator对象，可以用来遍历集合中的元素</em></strong><br><strong><em>boolean remove(Object o) ：从集合中删除一个对象的引用</em></strong><br><strong><em>int size()    ：返回集合中元素的数目</em></strong><br><strong><em>Object[] toArray()   ： 返回一个数组，该数组中包括集合中的所有元素</em></strong><br><strong><em>关于：Iterator() 和toArray() 方法都用于集合的所有的元素，前者返回一个Iterator对象，后者返回一个包含集合中所有元素的数组。</em></strong></p>
-<h4 id="简单介绍下-ArrayList-怎么实现，加操作、取值操作，什么时候扩容？"><a href="#简单介绍下-ArrayList-怎么实现，加操作、取值操作，什么时候扩容？" class="headerlink" title="简单介绍下 ArrayList 怎么实现，加操作、取值操作，什么时候扩容？"></a>简单介绍下 ArrayList 怎么实现，加操作、取值操作，什么时候扩容？</h4><p> ArrayList的列表对象实质上是存储在一个引用型数组,是一种动态数组实现了ICollection和IList接口，灵活的设置数组的大小的好处</p>
-<p>用法:ArrayList List = new ArrayList();</p>
-<p> for( inti=0;i&lt;10;i++ ) </p>
-<p>给数组增加10个Int元素 List.Add(i); </p>
-<p>List.RemoveAt(5);//移除第六个元素</p>
-<p>List.Add()//添加元素</p>
-<p>当需要添加元素二熔容量不够时,触发扩容机制</p>
-<p>1.得到当前的ArrayList的容量(oldCapacity)。</p>
-<p>2.计算除扩容后的新容量(newCapacity)，其值(oldCapacity + (oldCapacity &gt;&gt; 1))约是oldCapacity 的1.5倍。</p>
-<p>这里采用的是移位运算(关于移位运算，后续会讲到)。为什么采用这种方法呢？应该是出于效率的考虑。</p>
-<p>3.当newCapacity小于所需最小容量，那么将所需最小容量赋值给newCapacity。</p>
-<p>4.newCapacity大于ArrayList的所允许的最大容量,处理。</p>
-<p>5.进行数据的复制，完成向ArrayList实例添加元素操作。</p>
-<h4 id="讲一下-hashMap-原理。hashMap-可以并发读么？并发写会有什么问题？"><a href="#讲一下-hashMap-原理。hashMap-可以并发读么？并发写会有什么问题？" class="headerlink" title="讲一下 hashMap 原理。hashMap 可以并发读么？并发写会有什么问题？"></a>讲一下 hashMap 原理。hashMap 可以并发读么？并发写会有什么问题？</h4><p>Java中最常用的两种结构是数组和模拟指针(引用)，几乎所有的数据结构都可以利用这两种来组合实现。数组的存储方式在内存的地址是连续的，大小固定，一旦分配不能被其他引用占用。它的特点是查询快，时间复杂度是O(1)，插入和删除的操作比较慢，时间复杂度是O(n)，链表的存储方式是非连续的，大小不固定，特点与数组相反，插入和删除快，查询速度慢。HashMap可以说是一种折中的方案</p>
-<p>HashMap通过键的hashCode来快速的存取元素。当不同的对象hashCode发生碰撞时，HashMap通过单链表来解决，将新元素加入链表表头，通过next指向原有的元素</p>
-<p>hashMap是允许并发读的,但仅支持一定程度的写.</p>
-<p>线程不安全的HashMap, HashMap在并发执行put操作时会引起死循环，是因为多线程会导致HashMap的Entry链表形成环形数据结构，查找时会陷入死循环</p>
-<h4 id="讲一下-concurrentHashMap-原理。头插法还是尾插法？扩容怎么做？"><a href="#讲一下-concurrentHashMap-原理。头插法还是尾插法？扩容怎么做？" class="headerlink" title="讲一下 concurrentHashMap 原理。头插法还是尾插法？扩容怎么做？"></a>讲一下 concurrentHashMap 原理。头插法还是尾插法？扩容怎么做？</h4><h4 id="堆是怎么存储的，插入是在哪里？"><a href="#堆是怎么存储的，插入是在哪里？" class="headerlink" title="堆是怎么存储的，插入是在哪里？"></a>堆是怎么存储的，插入是在哪里？</h4><h4 id="集合在迭代的过程中，插入或删除数据会怎样？"><a href="#集合在迭代的过程中，插入或删除数据会怎样？" class="headerlink" title="集合在迭代的过程中，插入或删除数据会怎样？"></a>集合在迭代的过程中，插入或删除数据会怎样？</h4><h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><h4 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h4><h4 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h4><h3 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h3><h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2>]]></content>
-      <categories>
-        <category>学习生涯</category>
-      </categories>
-      <tags>
-        <tag>-java -学习整理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>免费VIP(点击查看提取码)</title>
     <url>/2020/05/09/%E5%85%8D%E8%B4%B9VIP/</url>
     <content><![CDATA[<h2 id="免费畅听"><a href="#免费畅听" class="headerlink" title="免费畅听"></a>免费畅听</h2><h4 id="安卓-链接Android"><a href="#安卓-链接Android" class="headerlink" title="安卓:链接Android"></a>安卓:<a href="https://pan.baidu.com/s/19Rbk8ybrefwGuzXeX0DaqQ" target="_blank" rel="noopener">链接Android</a></h4><p>提取码:  jh6f</p>
@@ -222,19 +122,102 @@ Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
   </entry>
   <entry>
     <title>Java</title>
-    <url>/2020/05/09/HelloWorld/</url>
-    <content><![CDATA[<h1 id="我和国漫的岁月"><a href="#我和国漫的岁月" class="headerlink" title="我和国漫的岁月"></a>我和国漫的岁月</h1><h3 id="镇魂街"><a href="#镇魂街" class="headerlink" title="镇魂街"></a>镇魂街</h3><h3 id="画江湖系列"><a href="#画江湖系列" class="headerlink" title="画江湖系列"></a>画江湖系列</h3><h5 id="画江湖之不良人"><a href="#画江湖之不良人" class="headerlink" title="画江湖之不良人"></a>画江湖之不良人</h5><p>目前为止已完结三季，第四季筹备中。衍生品：小说《画江湖之不良人》 作者：一伤二十八。</p>
-<h5 id="画江湖之灵主"><a href="#画江湖之灵主" class="headerlink" title="画江湖之灵主"></a>画江湖之灵主</h5><p>目前完结第一季，第二季筹备中。</p>
-<h5 id="画江湖之杯莫停"><a href="#画江湖之杯莫停" class="headerlink" title="画江湖之杯莫停"></a>画江湖之杯莫停</h5><p>目前完结第一季，第二季筹备中。</p>
-<h5 id="画江湖之换世门生"><a href="#画江湖之换世门生" class="headerlink" title="画江湖之换世门生"></a>画江湖之换世门生</h5><p>目前完结上篇，下篇筹备中。</p>
-<h5 id="画江湖之夏岚"><a href="#画江湖之夏岚" class="headerlink" title="画江湖之夏岚"></a>画江湖之夏岚</h5><p>对于这个我可能要吐槽一番。画江湖之夏岚世纪是夏岚第七季。但和前六季并没有紧密的联系，更像是单拎出来的，不仅人物模型有所改变，画风也没有了童年的味道。多说无益，有兴趣可以自己去看看，前六季是真的不错。<br><strong>侠岚振翼篇</strong>  <strong>侠岚云见篇</strong>  <strong>侠岚鸣风篇</strong>  <strong>侠岚若星篇</strong>  <strong>侠岚凌霜篇</strong> <strong>侠岚决敌篇</strong></p>
-<h5 id="画江湖之夜神"><a href="#画江湖之夜神" class="headerlink" title="画江湖之夜神"></a>画江湖之夜神</h5><p>播出时间未定</p>
-]]></content>
+    <url>/2020/05/06/Jave%E6%96%B9%E5%90%91%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</url>
+    <content><![CDATA[<h1 id="Jave方向面试准备"><a href="#Jave方向面试准备" class="headerlink" title="Jave方向面试准备"></a>Jave方向面试准备</h1><h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量:"></a>变量:</h3><p>用来命名一个数据的标识符</p>
+<h5 id="基本变量类型"><a href="#基本变量类型" class="headerlink" title="基本变量类型"></a>基本变量类型</h5><p>八种基本变量类型:  整型(byte/short/int/long)  字符型(char)  浮点型(double/float)  布尔型(boolean)</p>
+<table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">缺省值</th>
+<th align="center">长度/位</th>
+<th align="center">数的范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">byte</td>
+<td align="center">0</td>
+<td align="center">8</td>
+<td align="center">-128~127</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">0</td>
+<td align="center">16</td>
+<td align="center">-32768~32767</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">0</td>
+<td align="center">32</td>
+<td align="center">-2^31~2^31</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">0</td>
+<td align="center">64</td>
+<td align="center">-2^63~2^63</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">0.0</td>
+<td align="center">32</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">0.0</td>
+<td align="center">64</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">false</td>
+<td align="center">1</td>
+<td align="center">false&amp;true</td>
+</tr>
+</tbody></table>
+<p>字符型:char类型用于存放一个字符,用单引号,例如:  ‘ J ‘ ,其长度和short一样.</p>
+<p>浮点型:double需在赋值后+d,float需在赋值后+f.</p>
+<p>布尔型:用于表示真假虽然布尔型真正存放的数据是0(false) 1(true)但是，不能直接使用0 1 进行赋值</p>
+<p><strong>注意:</strong></p>
+<p><em>String类型:其实并不是基本类型,String类型是Immutable的，一旦创建就不能够被改变.</em></p>
+<p><em>类型转换: 只能大 —&gt; 小</em></p>
+<h3 id="Hashcode-amp-Equals"><a href="#Hashcode-amp-Equals" class="headerlink" title="Hashcode&amp;Equals"></a>Hashcode&amp;Equals</h3><p>equals与hashcode的关系是：两个对象在equals相等的情况下，hashcode有可能相等也有可能不相等，而两个对象在hashcode不相等的情况下，equals也必定不相等。理解equals的应用：它是用于用户在进行对比的时候，这个时候对比的是内容是否相等理解hashcode的应用：例如set集合，它的不可重复，进行对比的便是hashcode是否相等，因此set集合实现了不可重复。</p>
+<p>如果根据 equals(Object) 方法，两个对象是相等的，那么对这两个对象中的每个对象调用 hashCode 方法都必须生成相同的整数结果。即使两个hashCode()返回的结果相等，两个对象的equals方法也不一定相等。</p>
+<h5 id="Hashcode-哈希码"><a href="#Hashcode-哈希码" class="headerlink" title="Hashcode:哈希码"></a>Hashcode:<a href="https://baike.baidu.com/item/%E5%93%88%E5%B8%8C%E7%A0%81/5035512?fr=aladdin&fromtitle=hashcode&fromid=7482507" target="_blank" rel="noopener">哈希码</a></h5><p>是jdk根据对象的地址或者字符串或者数字算出来的int类型的数值。支持此方法是为了提高哈希表（例如java.util.Hashtable 提供的哈希表）的性能。HashMap对象是根据其Key的hashCode来获取对应的Value。在重写父类的equals方法时，也重写hashcode方法，使相等的两个对象获取的HashCode也相等。这样当此对象做Map类中的Key时，两个equals为true的对象其获取的value都是同一个，比较符合实际。</p>
+<h5 id="Equals-equals"><a href="#Equals-equals" class="headerlink" title="Equals:equals"></a>Equals:<a href="https://baike.baidu.com/item/equals/4481402#viewPageContent" target="_blank" rel="noopener">equals</a></h5><p>电脑编程语言，被用来检测两个对象是否相等，即两个对象的内容是否相等。</p>
+<p>equals 方法（是String类从它的超类Object中继承的）==用于比较引用和比较基本数据类型时具有不同的功能：比较基本数据类型，如果两个值相同，则结果为true而在比较引用时，如果引用指向内存中的同一对象，结果为true</p>
+<h3 id="集合-1-8-的实现和-1-7-相比变化"><a href="#集合-1-8-的实现和-1-7-相比变化" class="headerlink" title="集合 1.8 的实现和 1.7 相比变化"></a>集合 1.8 的实现和 1.7 相比变化</h3><h4 id="Collection-有什么子接口、有哪些具体的实现"><a href="#Collection-有什么子接口、有哪些具体的实现" class="headerlink" title="Collection 有什么子接口、有哪些具体的实现"></a>Collection 有什么子接口、有哪些具体的实现</h4><p>Collection是最基本的集合接口，声明了适用于JAVA集合（只包括Set和List）的通用方法。Map接口并不是Collection接口的子接口，但是它仍然被看作是Collection框架的一部分。</p>
+<p><img src="https://img-blog.csdn.net/20170817122606046?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXdxNTIwdHQxMzE0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="Collection"></p>
+<p> 我们可以看到collection接口是由两个子接口Set和List以及Map(不是collection的接口)组成的。下面我们分别看下各个子接口的组成和实现。 </p>
+<p> List(interface): List可以通过index知道元素的位置，它允许元素的重复。ArrayList, LinkedList, Vector可以实List接口。</p>
+<p> Set(interface):是不允许元素的重复。HashSet, LinkedHashSet,TreeSet 可以实现Set接口。</p>
+<p> Map(interface): 使用键值对(key-value), 值(value)可以重复，键(key)不可以重复。HashMap, LinkedHashMap, Hashtale, TreeMap可以实现Map接口。</p>
+<p><strong><em>boolean add(Object o)    ：向集合中加入一个对象的引用</em></strong><br><strong><em>void clear()：删除集合中所有的对象，即不再持有这些对象的引用</em></strong><br><strong><em>boolean isEmpty()   ：判断集合是否为空</em></strong><br><strong><em>boolean contains(Object o) ： 判断集合中是否持有特定对象的引用</em></strong><br><strong><em>Iterartor iterator()  ：返回一个Iterator对象，可以用来遍历集合中的元素</em></strong><br><strong><em>boolean remove(Object o) ：从集合中删除一个对象的引用</em></strong><br><strong><em>int size()    ：返回集合中元素的数目</em></strong><br><strong><em>Object[] toArray()   ： 返回一个数组，该数组中包括集合中的所有元素</em></strong><br><strong><em>关于：Iterator() 和toArray() 方法都用于集合的所有的元素，前者返回一个Iterator对象，后者返回一个包含集合中所有元素的数组。</em></strong></p>
+<h4 id="简单介绍下-ArrayList-怎么实现，加操作、取值操作，什么时候扩容？"><a href="#简单介绍下-ArrayList-怎么实现，加操作、取值操作，什么时候扩容？" class="headerlink" title="简单介绍下 ArrayList 怎么实现，加操作、取值操作，什么时候扩容？"></a>简单介绍下 ArrayList 怎么实现，加操作、取值操作，什么时候扩容？</h4><p> ArrayList的列表对象实质上是存储在一个引用型数组,是一种动态数组实现了ICollection和IList接口，灵活的设置数组的大小的好处</p>
+<p>用法:ArrayList List = new ArrayList();</p>
+<p> for( inti=0;i&lt;10;i++ ) </p>
+<p>给数组增加10个Int元素 List.Add(i); </p>
+<p>List.RemoveAt(5);//移除第六个元素</p>
+<p>List.Add()//添加元素</p>
+<p>当需要添加元素二熔容量不够时,触发扩容机制</p>
+<p>1.得到当前的ArrayList的容量(oldCapacity)。</p>
+<p>2.计算除扩容后的新容量(newCapacity)，其值(oldCapacity + (oldCapacity &gt;&gt; 1))约是oldCapacity 的1.5倍。</p>
+<p>这里采用的是移位运算(关于移位运算，后续会讲到)。为什么采用这种方法呢？应该是出于效率的考虑。</p>
+<p>3.当newCapacity小于所需最小容量，那么将所需最小容量赋值给newCapacity。</p>
+<p>4.newCapacity大于ArrayList的所允许的最大容量,处理。</p>
+<p>5.进行数据的复制，完成向ArrayList实例添加元素操作。</p>
+<h4 id="讲一下-hashMap-原理。hashMap-可以并发读么？并发写会有什么问题？"><a href="#讲一下-hashMap-原理。hashMap-可以并发读么？并发写会有什么问题？" class="headerlink" title="讲一下 hashMap 原理。hashMap 可以并发读么？并发写会有什么问题？"></a>讲一下 hashMap 原理。hashMap 可以并发读么？并发写会有什么问题？</h4><p>Java中最常用的两种结构是数组和模拟指针(引用)，几乎所有的数据结构都可以利用这两种来组合实现。数组的存储方式在内存的地址是连续的，大小固定，一旦分配不能被其他引用占用。它的特点是查询快，时间复杂度是O(1)，插入和删除的操作比较慢，时间复杂度是O(n)，链表的存储方式是非连续的，大小不固定，特点与数组相反，插入和删除快，查询速度慢。HashMap可以说是一种折中的方案</p>
+<p>HashMap通过键的hashCode来快速的存取元素。当不同的对象hashCode发生碰撞时，HashMap通过单链表来解决，将新元素加入链表表头，通过next指向原有的元素</p>
+<p>hashMap是允许并发读的,但仅支持一定程度的写.</p>
+<p>线程不安全的HashMap, HashMap在并发执行put操作时会引起死循环，是因为多线程会导致HashMap的Entry链表形成环形数据结构，查找时会陷入死循环</p>
+<h4 id="讲一下-concurrentHashMap-原理。头插法还是尾插法？扩容怎么做？"><a href="#讲一下-concurrentHashMap-原理。头插法还是尾插法？扩容怎么做？" class="headerlink" title="讲一下 concurrentHashMap 原理。头插法还是尾插法？扩容怎么做？"></a>讲一下 concurrentHashMap 原理。头插法还是尾插法？扩容怎么做？</h4><h4 id="堆是怎么存储的，插入是在哪里？"><a href="#堆是怎么存储的，插入是在哪里？" class="headerlink" title="堆是怎么存储的，插入是在哪里？"></a>堆是怎么存储的，插入是在哪里？</h4><h4 id="集合在迭代的过程中，插入或删除数据会怎样？"><a href="#集合在迭代的过程中，插入或删除数据会怎样？" class="headerlink" title="集合在迭代的过程中，插入或删除数据会怎样？"></a>集合在迭代的过程中，插入或删除数据会怎样？</h4><h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><h4 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h4><h4 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h4><h3 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h3><h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2>]]></content>
       <categories>
-        <category>个性</category>
+        <category>学习生涯</category>
       </categories>
       <tags>
-        <tag>-动漫之路</tag>
+        <tag>-java -学习整理</tag>
       </tags>
   </entry>
 </search>
