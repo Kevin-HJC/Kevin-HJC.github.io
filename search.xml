@@ -115,4 +115,28 @@
         <tag>-Android-PC -免费</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Java学习经验总结</title>
+    <url>/2020/06/03/Java/</url>
+    <content><![CDATA[<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a><a href="https://www.java.com/zh_CN/" target="_blank" rel="noopener">Java</a></h1><p><strong>Java的特性:开源,可移植,多线程,面向对象,高性能</strong></p>
+<h5 id="工作方式"><a href="#工作方式" class="headerlink" title="工作方式"></a>工作方式</h5><p>程序员编写源代码——&gt;编译器检查无误后编译成字节码文件(字节码文件与系统无关,支持Java运行环境都可以执行)——&gt;Java虚拟机装载运行</p>
+<h5 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h5><p><a href="https://www.eclipse.org/downloads/" target="_blank" rel="noopener">Eclipse</a></p>
+<h5 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h5><h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><p>程序中用来指向(引用)内存中数据的代号,方便程序对数据进行操作.只要变量指向的数据的值与其声明 的类型一致就能被正确编译.</p>
+<h5 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h5><p>包名,类名,函数名,变量名,常量名等统称为标识符.</p>
+<h5 id="标识符规范"><a href="#标识符规范" class="headerlink" title="标识符规范"></a>标识符规范</h5><p>1.不限Java字母和Java数字组成的序列</p>
+<p>2.必须以Java字母开头</p>
+<p>3.Java支持标识符为中文但最好不要用</p>
+<p>4.不能使用关键字来命名标识符,例如:abstract,boolean,break,byte,case,catch,char,class,continue,default,do double,else,extends,final,finally,float,for,new ,implements,import,instanceof,int,interface,long,native,throws,package,private,protented,public,return,short,static,super,switch,throw,synchronized,this,transient,try,void,volitile,while,sizeof,const</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><h5 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h5><p>4个整型:byte,short,int,long(分别占2的0~3次方字节)</p>
+<p>2个浮点型:flaut,double(精度6,15)</p>
+<p>1的Unicode编码的字符类型char(占2个字节=short占字节数)</p>
+<p>1个表示真值的boolean类型(只有真假两个值)</p>
+<h5 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h5>]]></content>
+      <categories>
+        <category>-Myself</category>
+      </categories>
+      <tags>
+        <tag>-Java -面试准备</tag>
+      </tags>
+  </entry>
 </search>
