@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/11/21/hello-world/</url>
+    <content><![CDATA[ <center>
+     <h1>黄景成</h1>
+     <div>
+         <h4>
+             <img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/telephone.6mqcjctk5t40.svg" width="18px">
+             17754119312
+         </h4>
+         <h4>
+             <img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/email.1161kck5g6yo.svg" width="18px">
+             huang.jingcheng@outlook.com
+         </h4>
+     </div>
+ </center>
+
+
+
+ <center>
+<img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/personal_information.1sstpltskclc.svg" width="32px">
+ </center>
+
+ <center>
+     <h4>男，1998 年出生</h4>
+     <h4>求职意向：Java 研发工程师</h4>
+     <h4>工作经验：2 年</h4>
+     <h4>期望薪资：10 k</h4>
+ </center>
+
+
+
+ <center>
+<img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/education_32.hlj7gbwnv2o.svg" width="32px">
+ </center>
+
+ <center>
+     <h4>学士--安徽信息工程学院--软件工程专业</h4>
+     <h6>2017.9~2021.7</h6>
+     <h6>绩点:3.6/4</h6>
+     <h6>CET4</h6>
+ </center>
+
+
+
+ <center>
+<img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/work_experience.uqj0l5lil6.svg" width="32px">
+ </center>
+
+ <center>
+     <h2>工作经历</h2>
+ </center>
+
+
+
+<ul>
+<li><p><strong>安琥百得思维科技有限公司，研发一部，Java开发工程师，2020.06~2021.05</strong></p>
+<p> 负责 XXX</p>
+</li>
+</ul>
+ <center>
+<img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/Project_experience.574byxk264k0.svg" width="32px">
+ </center> 
+
+ <center>
+     <h2> 项目经历</h2>
+ </center>
+
+
+
+<ul>
+<li><p><strong>XXXX 项目</strong></p>
+<p><em>使用到的技术</em></p>
+<p>使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。</p>
+</li>
+</ul>
+ <center>
+<img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/skill.2t2y7mk71200.svg" width="32px">
+ </center> 
+
+ <center>
+     <h2>技能清单</h2>
+ </center>
+
+
+
+<ul>
+<li>★★★★  Java</li>
+<li>★★☆☆  C++、Python</li>
+<li>★★★☆  MySQL</li>
+<li>★★★☆  Redis</li>
+<li>★★☆☆  Spring</li>
+<li>★☆☆☆  RabbitMQ、ZooKeeper</li>
+<li>★☆☆☆  JavaScript</li>
+</ul>
+]]></content>
+  </entry>
+</search>
