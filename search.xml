@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
+    <title>她很重要</title>
     <url>/2021/11/21/hello-world/</url>
     <content><![CDATA[ <center>
-     <h1>黄景成</h1>
+     <h2>黄景腾</h2>
      <div>
          <h4>
              <img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/telephone.6mqcjctk5t40.svg" width="18px">
@@ -54,12 +54,20 @@
  </center>
 
 
+<center>
+    <h3>
+        安徽百得思维信息科技有限公司
+    </h3>
+Java开发工程师------2020.06~2021.05
+    <h3>
+        深圳建广数字科技有限公司
+    </h3>
+Java开发工程师------2021.06~至今
+</center>
 
-<ul>
-<li><p><strong>安琥百得思维科技有限公司，研发一部，Java开发工程师，2020.06~2021.05</strong></p>
-<p> 负责 XXX</p>
-</li>
-</ul>
+
+
+
  <center>
 <img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/Project_experience.574byxk264k0.svg" width="32px">
  </center> 
@@ -68,14 +76,30 @@
      <h2> 项目经历</h2>
  </center>
 
+<center>
+合肥残疾人托养管理系统项目
+</center> 
+
+<ul>
+<li><strong>主要技术</strong>：Springboot，hibernate，struts，Oracle，Linux，jsp</li>
+<li><strong>负责开发模块</strong>：日间照料子系统的开发，简单jsp的修改</li>
+<li><strong>主要功能</strong>：对残疾人提供日常的服务，残疾人的申请服务——》生成订单——》服务人员提供服务——》服务人员完成服务——》政府人员对服务的回访</li>
+<li><strong>系统的部署</strong>：将系统打成war包的部署</li>
+<li><strong>总结</strong>：了解业务需求，设计表，业务上的增删改查，<em><strong>有点挑战的是Excel的导入导出</strong></em>。通过百度使用POI解决</li>
+</ul>
+<center>
+智慧建筑项目
+</center>
 
 
 <ul>
-<li><p><strong>XXXX 项目</strong></p>
-<p><em>使用到的技术</em></p>
-<p>使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。</p>
-</li>
+<li><strong>主要技术</strong>：SpringCloud，SpringBoot，Mybatis，nacos，Oracle，Vue，RabbitMQ，SSO</li>
+<li><strong>负责开发模块</strong>：租户的相关业务（进入这个项目一个月时间左右具体忘记了）</li>
+<li><strong>主要功能</strong>：配置nacos，租户的业务开发</li>
+<li><strong>总结</strong>：感觉项目的架构很复杂集成东西很多，项目的开发前有nacos，RabbitMQ的文档，大概给了一周的时间熟悉项目框架，要求使用阿里云的代码规范文档</li>
+<li><strong>感受</strong>：Mybatis无论是SQL的编写还是日志的查看都比Hibernate开的方便很多</li>
 </ul>
+<p>使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。</p>
  <center>
 <img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/skill.2t2y7mk71200.svg" width="32px">
  </center> 
