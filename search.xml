@@ -77,7 +77,7 @@ Java开发工程师------2021.06~至今
  </center>
 
 <center>
-合肥残疾人托养管理系统项目
+合肥残疾人托养管理系统
 </center> 
 
 <ul>
@@ -88,18 +88,27 @@ Java开发工程师------2021.06~至今
 <li><strong>总结</strong>：了解业务需求，设计表，业务上的增删改查，<em><strong>有点挑战的是Excel的导入导出</strong></em>。通过百度使用POI解决</li>
 </ul>
 <center>
-智慧建筑项目
+智慧建筑
 </center>
 
 
 <ul>
 <li><strong>主要技术</strong>：SpringCloud，SpringBoot，Mybatis，nacos，Oracle，Vue，RabbitMQ，SSO</li>
-<li><strong>负责开发模块</strong>：租户的相关业务（进入这个项目一个月时间左右具体忘记了）</li>
-<li><strong>主要功能</strong>：配置nacos，租户的业务开发</li>
-<li><strong>总结</strong>：感觉项目的架构很复杂集成东西很多，项目的开发前有nacos，RabbitMQ的文档，大概给了一周的时间熟悉项目框架，要求使用阿里云的代码规范文档</li>
+<li><strong>负责开发模块</strong>：租户的相关业务</li>
+<li><strong>总结</strong>：项目的架构很复杂集成东西很多，项目的开发前有nacos，RabbitMQ的文档，大概给了一周的时间熟悉项目框架，要求使用阿里云的代码规范文档</li>
 <li><strong>感受</strong>：Mybatis无论是SQL的编写还是日志的查看都比Hibernate开的方便很多</li>
 </ul>
-<p>使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。</p>
+<center>
+阳光家电光伏信息系统
+</center>
+
+
+<ul>
+<li><strong>主要技术</strong>：SpringCloud，SpringBoot，Mybatis，JPA，Hibernate，nacos，Mysql，Vue，RabbitMQ，Kubernetes</li>
+<li><strong>负责开发模块</strong>：字典的统一使用，物料模块，SAP的业务对接，阳光贷后模块，阳光云第三方的对接，应收项目模块，销售合同模块，交货单模块，</li>
+<li><strong>总结</strong>：项目使用微服务的架构，使用Docker，Kubernetes等实现一键部署，方便测试环境的日志查看</li>
+<li><strong>感受</strong>：本项目同时集成Mybatis和Hibernate（其实熟练后两者的开发效率并不大），还是的看业务需求是否明确，自身技术是否过硬。</li>
+</ul>
  <center>
 <img src="https://cdn.jsdelivr.net/gh/Kevin-HJC/image-hosting@master/image/skill.2t2y7mk71200.svg" width="32px">
  </center> 
